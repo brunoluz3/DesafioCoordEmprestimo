@@ -5,16 +5,11 @@ Go + Fiber + Cálculo PRICE com big.Float
 📌 Visão Geral
 Este serviço expõe o endpoint POST /simular, responsável por calcular a parcela fixa (sistema PRICE) de operações de empréstimo.
 
-A implementação utiliza Go com math/big.Float, garantindo:
-
-Alta performance
-
-Precisão financeira
-
-Concorrência leve
-
-Baixo consumo de CPU e memória
-
+A implementação utiliza Go com math/big.Float, garantindo:\
+Alta performance\
+Precisão financeira\
+Concorrência leve\
+Baixo consumo de CPU e memória\
 
 
 🧮 1. Cálculo PRICE com big.Float
@@ -41,15 +36,11 @@ POST /simular
 
 📥 Corpo da Requisição (JSON)
 
-{
-  
-  "amount": 10000,
-
-  "rate": 0.02,
-
-  "months": 12
-
-}
+{\  
+  "amount": 10000,\
+  "rate": 0.02,\
+  "months": 12\
+}\
 
 | Campo    | Tipo      | Obrigatório | Descrição               |
 | -------- | --------- | ----------- | ----------------------- |
@@ -59,17 +50,12 @@ POST /simular
 
 📤 Corpo da Resposta (JSON)
 
-{
-
-  "installment": 937.42,
-
-  "amount": 10000,
-
-  "rate": 0.02,
-
-  "months": 12
-
-}
+{\
+  "installment": 937.42,\
+  "amount": 10000,\
+  "rate": 0.02,\
+  "months": 12\
+}\
 
 | Campo         | Tipo      | Descrição                   |
 | ------------- | --------- | --------------------------- |
@@ -92,28 +78,19 @@ curl -X POST http://localhost:8080/simular \
 
 🔹 Response
 
-{
-
-  "installment": 937.42,
-
-  "amount": 10000,
-
-  "rate": 0.02,
-
-  "months": 12
-
+{\
+  "installment": 937.42,\
+  "amount": 10000,\
+  "rate": 0.02,\
+  "months": 12\
 }
 
 
 🎯 Conclusão
 
-O serviço oferece:
-🔥 Alta performance com big.Float
-
-⚡ Baixa latência, ideal para grandes volumes
-
-🧮 Precisão financeira real
-
-🧩 API limpa e simples de integrar (Fiber)
-
+O serviço oferece:\
+🔥 Alta performance com big.Float\
+⚡ Baixa latência, ideal para grandes volumes\
+🧮 Precisão financeira real\
+🧩 API limpa e simples de integrar (Fiber)\
 🏗️ Pode ser facilmente containerizado e escalado
