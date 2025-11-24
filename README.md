@@ -16,7 +16,9 @@ Concorrência leve
 Baixo consumo de CPU e memória
 
 
+
 🧮 1. Cálculo PRICE com big.Float
+
 📝 Função: MonthlyPayment(pv, rate float64, n int) float64
 
 Função de alta precisão para cálculo da parcela do financiamento (PRICE).
@@ -38,14 +40,11 @@ Função de alta precisão para cálculo da parcela do financiamento (PRICE).
 POST /simular
 
 📥 Corpo da Requisição (JSON)
+
 {
-
   "amount": 10000,
-
   "rate": 0.02,
-
   "months": 12
-
 }
 
 | Campo    | Tipo      | Obrigatório | Descrição               |
