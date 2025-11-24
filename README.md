@@ -76,7 +76,7 @@ curl -X POST http://localhost:8080/simular \
       }'
 
 
-🔹 Response
+🔹 Response\
 {\
   "installment": 937.42,\
   "amount": 10000,\
