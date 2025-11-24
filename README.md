@@ -43,8 +43,11 @@ POST /simular
 
 {
   "amount": 10000,
+
   "rate": 0.02,
+
   "months": 12
+  
 }
 
 | Campo    | Tipo      | Obrigatório | Descrição               |
