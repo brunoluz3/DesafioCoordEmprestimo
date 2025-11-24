@@ -58,6 +58,7 @@ POST /simular
 | `months` | `int`     | ✔           | Quantidade de parcelas. |
 
 📤 Corpo da Resposta (JSON)
+
 {
 
   "installment": 937.42,
@@ -78,21 +79,19 @@ POST /simular
 | `months`      | `int`     | Prazo informado.            |
 
 🧪 Exemplo de Uso — cURL
+
 🔹 Request
 curl -X POST http://localhost:8080/simular \
   -H "Content-Type: application/json" \
-  -d '{
-
-        "amount": 10000,
-
-        "rate": 0.02,
-
-        "months": 12
-
+  -d '{\
+        "amount": 10000,\
+        "rate": 0.02,\
+        "months": 12\
       }'
 
 
 🔹 Response
+
 {
 
   "installment": 937.42,
