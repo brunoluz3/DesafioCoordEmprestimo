@@ -50,7 +50,7 @@ POST /simular
 
 📤 Corpo da Resposta (JSON)
 
-{
+{\
   "installment": 937.42,\
   "amount": 10000,\
   "rate": 0.02,\
@@ -77,6 +77,7 @@ curl -X POST http://localhost:8080/simular \
 
 
 🔹 Response
+
 {
   "installment": 937.42,\
   "amount": 10000,\
